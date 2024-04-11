@@ -1,9 +1,8 @@
-$("#hamburgerMenu").on("click", function(){
-    $(#hamburgerMenu).toggleClass("active");
-  if ($("#hamburgerMenu").hasClass("active")) {
-    $("hamurgerMenu").addClass(".menu");
-}
-  else {
-    $("#hamurgerMenu").removeClass(".menu");
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
-});
+}

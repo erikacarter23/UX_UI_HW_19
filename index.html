@@ -14,24 +14,62 @@
       </div>
     </div>
     <nav class="navbar">
+        
+          <div class="topnav" id="myTopnav">
+            <ul>
+            <div class="dropdown">
+            <button class="dropbtn">Home</button>
+          </div></ul>
+          <ul><div class="dropdown">
+              <button class="dropbtn">About Us</button>
+              <div class="dropdown-content">
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Board of Directors</a>
+                <a href="#">Story Tails</a>
+                <a href="#">Therapy Teams</a>
+                <a href="#">Annual Report</a>
+              </div>
+          </div></ul>
+          <ul><div class="dropdown">
+          <button class="dropbtn">Facility Vists</button>
+        </div></ul>
+
+         <ul> <div class="dropdown">
+          <button class="dropbtn">Membership</button>
+          <div class="dropdown-content2">
+            <a href="#">Join TASA</a>
+            <a href="#">Become a Therapy Team</a>
+            <a href="#">Care Membership</a>
+          </div>
+        </div></ul>
         <ul>
-          <li><a href="#">Home</li>
-          <li><a href="#">About Us</li>
-          <li><a href="#">Facility Visits</li>
-          <li><a href="#">Membership</li>
-          <li><a href="#">Support TASA</li>
-          <li><a href="#">Events</li>
-          <li><a href="#"></a><img src="images/header-searchicon.svg" id="searchicon"></li>
-          <li><a href="#"></a><button class="button1">
+        <div class="dropdown">
+          <button class="dropbtn">Support TASA</button>
+          <div class="dropdown-content3">
+            <a href="#">Shop TASA</a>
+            <a href="#">Current Sponsors</a>
+            <a href="#">Estate Planning</a>
+          </div>
+        </div></ul>
+        <ul><div class="dropdown">
+          <button class="dropbtn">Events</button>
+          <div class="dropdown-content4">
+            <a href="#">Events Blog</a>
+            <a href="#">Calendar of Events</a>
+            <a href="#">Pooch Parade</a>
+          </div>
+          </div>
+        </div></ul>
+         <a href="#"></a><img src="images/header-searchicon.svg" id="searchicon"></ul> 
+         <a href="#"></a><button class="button1">
             <span class="button__text">DONATE</span>
-            <span class="button__icon"><img src="images/header-paw.svg"></span>
-          </button></li>
-          <li><a href="#"></a><button class="button2">
+            <span class="button__icon"><img src="images/header-paw.svg" alt="paw"></span>
+          </button>
+          <a href="#"></a><button class="button2">
             <span class="button__text2">LOGIN</span>
-            <span class="button__icon2"><img src="images/login icon.svg"></span>
-          </button></li>
-          </ul>
-        </nav>
+            <span class="button__icon2"><img src="images/login icon.svg" alt="login"></span>
+          </button></nav>
         <div class="nav-left">
           <img src="images/logo tharapy animal 1.png" height="100px" width="100px">
           <h1>THERAPY ANIMALS <br> OF SAN ANTONIO</h1></div>
@@ -40,7 +78,7 @@
           <img src="Images/search icon.png" height="50px" width="50px">
           <img src="Images/LOG IN ICON.png" height="50px" width="50px">
           <div class="dropdown">
-          <button onclick="myFunction()" class="hamburgerMenu"><img src="images/menu_24px.png"></button>
+          <button class="hamburgerMenu"><img src="images/menu_24px.png"></button>
         <div id="myDropdown" class="dropdown-content">
             <a href="#">Home</a>
             <a href="#">About Us</a>
@@ -197,24 +235,7 @@
     </div>
     </div>
 </footer>
-</html>
+<script src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
-<script>
-  function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.hamburgerMenu')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
 </html>
