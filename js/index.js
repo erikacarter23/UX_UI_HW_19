@@ -6,3 +6,9 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+  $(".card1-dropdown").click(function(){
+    $(".card1").slideDown("slow");
+  });
+  $(".card-dropdown").click(function(){
+    $(".card1").slideUp("slow");
+  });
